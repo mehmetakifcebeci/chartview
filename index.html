@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kripto Para Analiz</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="main-container">
+        <div class="left-section">
+            <div id="ticker"></div>
+            <div class="period-selector">
+                <select id="periodSelect">
+                    <option value="1h">1 Saat</option>
+                    <option value="4h">4 Saat</option>
+                    <option value="1d">1 Gün</option>
+                    <option value="1w">1 Hafta</option>
+                    <option value="1M">1 Ay</option>
+                </select>
+            </div>
+            <div class="chart-container">
+                <div id="priceAxis"></div>
+                <div id="chartContainer">
+                    <canvas id="chartCanvas"></canvas>
+                </div>
+                <div id="timeAxis"></div>
+            </div>
+        </div>
+        
+        <!-- Sağdaki modüller bölümü -->
+        <div class="sidebar">
+            <!-- Teknik Analiz Modülü -->
+            <div class="module">
+                <div class="module-header">
+                    <i class="fas fa-chart-bar"></i>
+                    <h3>Teknik Analiz Modülü</h3>
+                </div>
+                <div class="module-content">
+                    <p>Teknik analiz modülü hazırlanıyor. İleri bir tarihte entegre edilecek ve burada gösterilecektir.</p>
+                </div>
+            </div>
+            
+            <!-- Yapay Zeka Modülü -->
+            <div class="module">
+                <div class="module-header">
+                    <i class="fas fa-brain"></i>
+                    <h3>Yapay Zeka Modülü</h3>
+                </div>
+                <div class="module-content">
+                    <p>Yapay zeka modülü ile fiyat tahminleri ve analiz sonuçları yakında burada görüntülenecektir.</p>
+                </div>
+            </div>
+            
+            <!-- Trade Bot Modülü -->
+            <div class="module">
+                <div class="module-header">
+                    <i class="fas fa-robot"></i>
+                    <h3>Trade Bot</h3>
+                </div>
+                <div class="module-content">
+                    <p>Otomatik alım satım stratejileri ve bot ayarları yakında bu kısımda yer alacak.</p>
+                    <button class="bot-button disabled">Bot Başlat</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
